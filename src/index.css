@@ -118,3 +118,41 @@
   @apply shadow-md;
   transform: scale(1.02);
 }
+
+/* Animation utilities */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Salon specific colors */
+@layer utilities {
+  .bg-salon-pink {
+    @apply bg-[#FFDEE2];
+  }
+  .bg-salon-light-pink {
+    @apply bg-[#FFF1F3];
+  }
+  .bg-salon-lilac {
+    @apply bg-[#E5DEFF];
+  }
+  .bg-salon-light-lilac {
+    @apply bg-[#F5F2FF];
+  }
+  .text-salon-pink {
+    @apply text-[#D9798A];
+  }
+  .text-salon-lilac {
+    @apply text-[#9B87F5];
+  }
+  .border-salon-pink {
+    @apply border-[#FFDEE2];
+  }
+  .border-salon-lilac {
+    @apply border-[#E5DEFF];
+  }
+}
