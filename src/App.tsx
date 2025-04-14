@@ -11,6 +11,8 @@ import Galeria from "./pages/Galeria";
 import Depoimentos from "./pages/Depoimentos";
 import Contato from "./pages/Contato";
 import Agendar from "./pages/Agendar";
+import AdminLogin from "./pages/AdminLogin";
+import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +31,8 @@ const App = () => (
           <Route path="/depoimentos" element={<Depoimentos />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/agendar" element={<Agendar />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
           {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
